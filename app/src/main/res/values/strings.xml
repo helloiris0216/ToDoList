@@ -7,6 +7,13 @@
     <string name="add">add</string>
     <string name="tile">Tile</string>
     <string name="description">Description</string>
+    <string name="search">Search</string>
+    <string name="sortBy">SortBy</string>
+    <string name="priority_high">Priority High</string>
+    <string name="priority_low">Priority Low</string>
+    <string name="delete_all">Delete All</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
 
     <string-array name="priorities">
         <item>High Priority</item>
