@@ -6,14 +6,18 @@
         <entry key="..\:/Users/Iris/AndroidStudioProjects/ToDoList/app/src/main/res/drawable/custom_input.xml" value="0.1005" />
         <entry key="..\:/Users/Iris/AndroidStudioProjects/ToDoList/app/src/main/res/drawable/ic_add.xml" value="0.1195" />
         <entry key="..\:/Users/Iris/AndroidStudioProjects/ToDoList/app/src/main/res/drawable/ic_no_data.xml" value="0.1845" />
+        <entry key="..\:/Users/Iris/AndroidStudioProjects/ToDoList/app/src/main/res/drawable/item_background.xml" value="0.1785" />
+        <entry key="..\:/Users/Iris/AndroidStudioProjects/ToDoList/app/src/main/res/drawable/row_background.xml" value="0.117" />
         <entry key="..\:/Users/Iris/AndroidStudioProjects/ToDoList/app/src/main/res/drawable/update_fragment_menu.xml" value="0.1" />
         <entry key="..\:/Users/Iris/AndroidStudioProjects/ToDoList/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Iris/AndroidStudioProjects/ToDoList/app/src/main/res/layout/fragment_add.xml" value="0.25" />
         <entry key="..\:/Users/Iris/AndroidStudioProjects/ToDoList/app/src/main/res/layout/fragment_list.xml" value="0.1875" />
         <entry key="..\:/Users/Iris/AndroidStudioProjects/ToDoList/app/src/main/res/layout/fragment_update.xml" value="0.1" />
+        <entry key="..\:/Users/Iris/AndroidStudioProjects/ToDoList/app/src/main/res/layout/row_layout.xml" value="0.7528089887640449" />
         <entry key="..\:/Users/Iris/AndroidStudioProjects/ToDoList/app/src/main/res/menu/add_fragment_menu.xml" value="0.3098958333333333" />
         <entry key="..\:/Users/Iris/AndroidStudioProjects/ToDoList/app/src/main/res/menu/ic_search.xml" value="0.1" />
         <entry key="..\:/Users/Iris/AndroidStudioProjects/ToDoList/app/src/main/res/menu/list_fragment_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Iris/AndroidStudioProjects/ToDoList/app/src/main/res/menu/update_fragment_menu.xml" value="0.17777777777777778" />
       </map>
     </option>
   </component>

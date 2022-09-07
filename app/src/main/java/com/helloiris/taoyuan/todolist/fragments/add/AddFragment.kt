@@ -12,6 +12,7 @@ import com.helloiris.taoyuan.todolist.data.models.Priority
 import com.helloiris.taoyuan.todolist.data.models.ToDoData
 import com.helloiris.taoyuan.todolist.data.viewmodel.ToDoViewModel
 import com.helloiris.taoyuan.todolist.fragments.ShareViewModel
+import com.helloiris.taoyuan.todolist.fragments.list.ListAdapter
 import kotlinx.android.synthetic.main.fragment_add.*
 import kotlinx.android.synthetic.main.fragment_add.view.*
 
