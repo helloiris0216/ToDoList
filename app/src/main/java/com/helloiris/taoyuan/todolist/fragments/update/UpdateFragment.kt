@@ -12,6 +12,7 @@ import com.helloiris.taoyuan.todolist.R
 import com.helloiris.taoyuan.todolist.data.models.Priority
 import com.helloiris.taoyuan.todolist.data.models.ToDoData
 import com.helloiris.taoyuan.todolist.data.viewmodel.ToDoViewModel
+import com.helloiris.taoyuan.todolist.databinding.FragmentUpdateBinding
 import com.helloiris.taoyuan.todolist.fragments.ShareViewModel
 import kotlinx.android.synthetic.main.fragment_update.*
 import kotlinx.android.synthetic.main.fragment_update.view.*
@@ -21,24 +22,29 @@ class UpdateFragment : Fragment() {
     private val shareViewModel: ShareViewModel by viewModels()
     private val todoViewModel: ToDoViewModel by viewModels()
 
+    private var _binding: FragmentUpdateBinding? = null
+    private val binding get() = _binding!!
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_update, container, false)
+        // data binding
+        _binding = FragmentUpdateBinding.inflate(inflater, container, false)
+        binding.lifecycleOwner = this
+        binding.currentTitleEd.setText(args.currentItem.title)
+        binding.currentDescriptionEd.setText(args.currentItem.description)
+        binding.currentPrioritiesSpinner.setSelection(shareViewModel.parsePriorityToInt(args.currentItem.priority))
+        binding.currentPrioritiesSpinner.onItemSelectedListener = shareViewModel.listener
 
         // set menu
         setHasOptionsMenu(true)
+        return binding.root
+    }
 
-        view.currentTitleEd.setText(args.currentItem.title)
-        view.currentDescriptionEd.setText(args.currentItem.description)
-        view.currentPrioritiesSpinner.setSelection(shareViewModel.parsePriorityToInt(args.currentItem.priority))
-
-        // set the selected listener
-        view.currentPrioritiesSpinner.onItemSelectedListener = shareViewModel.listener
-
-        return view
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

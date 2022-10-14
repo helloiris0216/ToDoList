@@ -1,11 +1,13 @@
 package com.helloiris.taoyuan.todolist.fragments
 
 import android.view.View
+import android.widget.Spinner
 import androidx.databinding.BindingAdapter
 import androidx.lifecycle.MutableLiveData
 import androidx.navigation.findNavController
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.helloiris.taoyuan.todolist.R
+import com.helloiris.taoyuan.todolist.data.models.Priority
 
 /*
  * Package com.helloiris.taoyuan.todolist.fragments
@@ -32,9 +34,20 @@ class BindingAdapters {
         @JvmStatic
         fun emptyDatabase(view: View, emptyDatabase: MutableLiveData<Boolean>) {
             when(emptyDatabase.value) {
-                true -> view.visibility = View.VISIBLE
                 false -> view.visibility = View.INVISIBLE
+                else -> view.visibility = View.VISIBLE
             }
+        }
+
+        @BindingAdapter("android:parsePriorityToInt")
+        @JvmStatic
+        fun parsePriorityToInt(view: Spinner, priority: Priority) {
+            val value = when(priority) {
+                Priority.HIGH -> 0
+                Priority.MEDIUM -> 1
+                Priority.LOW -> 2
+            }
+            view.setSelection(value)
         }
     }
 }
