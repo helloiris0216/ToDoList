@@ -17,7 +17,6 @@ import kotlinx.android.synthetic.main.fragment_update.*
 import kotlinx.android.synthetic.main.fragment_update.view.*
 
 class UpdateFragment : Fragment() {
-
     private val args by navArgs<UpdateFragmentArgs>()
     private val shareViewModel: ShareViewModel by viewModels()
     private val todoViewModel: ToDoViewModel by viewModels()
