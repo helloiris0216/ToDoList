@@ -1,18 +1,15 @@
 package com.helloiris.taoyuan.todolist.fragments.add
 
 import android.os.Bundle
-import android.text.TextUtils
 import android.view.*
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.helloiris.taoyuan.todolist.R
-import com.helloiris.taoyuan.todolist.data.models.Priority
 import com.helloiris.taoyuan.todolist.data.models.ToDoData
 import com.helloiris.taoyuan.todolist.data.viewmodel.ToDoViewModel
 import com.helloiris.taoyuan.todolist.fragments.ShareViewModel
-import com.helloiris.taoyuan.todolist.fragments.list.ListAdapter
 import kotlinx.android.synthetic.main.fragment_add.*
 import kotlinx.android.synthetic.main.fragment_add.view.*
 
